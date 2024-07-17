@@ -6,9 +6,13 @@
 }
 
 .container{
+    
 }
 
 header{
+    position: fixed;
+    right: 0;
+    left: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -130,4 +134,33 @@ footer{
 
 footer p{
     font-weight: 600;
+}
+
+.bars{
+    display: none;
+}
+
+@media (max-width: 770px)  {
+    header ul{
+        display: none;
+
+    }
+
+    .bars{
+        display: block;
+
+    }
+
+    header{
+        padding: 20px 30px;
+
+    }
+
+    .rasmlar{
+        flex-direction: column;
+    }
+
+    .subscribe{
+        flex-direction: column;
+    }
 }
